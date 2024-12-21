@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "vton 0.1",
+  "version": "0.1",
+  "description": "try your clothes on virtually",
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "side_panel": {
+    "default_path": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "icons": {
+    "16": "images/cat1.png"
+  },
+  "permissions": ["storage", "sidePanel", "activeTab", "scripting", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/contentScript.js"]
+    }
+  ]
+}
