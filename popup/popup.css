@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.show-panel-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  z-index: 1001;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-outline {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-primary {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #9932cc;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-large {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  height: 200px;
+  border-radius: 8px;
+  padding: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: 8px;
+  object-fit: contain;
+}
+
+.upload-area:hover {
+  background-color: #f0f0f0;
+}
+
+.upload-area-small {
+  padding: 16px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.example-item {
+  display: flex;
+  gap: 8px;
+}
+
+.example-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.upload-area.active {
+  border-color: #8a2be2;
+}

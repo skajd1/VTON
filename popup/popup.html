@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Try-On</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <button id="showPanel" class="show-panel-btn">Show Panel</button>
+    <div id="tryOnPanel" class="panel">
+      <div class="panel-header">
+        <h2>VTON</h2>
+      </div>
+
+      <div class="section">
+        <h3>모델 이미지</h3>
+        <p class="subtitle">옷을 입힐 모델 사진을 업로드 하세요</p>
+        <div id="userImageUpload" class="upload-area">
+          <span class="icon">⇧</span>
+          <p>Click & Drag</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>옷 이미지</h3>
+        <p class="subtitle">입히고 싶은 옷 이미지를 업로드 하세요.</p>
+        <div class="grid">
+          <button id="pickFromWebsite" class="btn btn-outline btn">
+            <span class="icon">👁 </span>
+            <span>웹에서 선택하기</span>
+          </button>
+          <div id="clothImageUpload" class="upload-area upload-area-small">
+            <span class="icon">⇧</span>
+            <span>Click & Drag</span>
+          </div>
+        </div>
+      </div>
+
+      <button id="tryOnButton" class="btn btn-primary" disabled>Try On! ✨</button>
+
+      <div class="section">example</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
